@@ -26,7 +26,7 @@ const Sidebar = () => {
       <div
         className={`flex ${
           isCollapsed ? 'flex-col items-center' : 'items-center justify-between'
-        }  py-4`}
+        } p-2`}
       >
         <Image
           src={isCollapsed ? logo_2 : logo}
@@ -36,13 +36,13 @@ const Sidebar = () => {
           className='mb-2'
         />
         <div
-          className='p-2 bg-white h-8 w-8 rounded-full items-center flex justify-center cursor-pointer mt-2'
+          className='p-2 bg-white h-6 w-6 rounded-full items-center flex justify-center cursor-pointer mt-2'
           onClick={handleToggle}
         >
           {isCollapsed ? (
-            <ChevronRight className='text-black' />
+            <ChevronRight className='text-black text-2xl' />
           ) : (
-            <ChevronLeft className='text-black' />
+            <ChevronLeft className='text-black text-2xl' />
           )}
         </div>
       </div>
